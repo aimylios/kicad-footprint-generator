@@ -1,0 +1,152 @@
+TVSOP-14:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 4.4
+        size_y: 3.6
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 14
+        pitch_x: 6.2
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-16:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 4.4
+        size_y: 3.6
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 16
+        pitch_x: 6.2
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-20:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 4.4
+        size_y: 5.0
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 20
+        pitch_x: 6.2
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-24:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 4.4
+        size_y: 5.0
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 24
+        pitch_x: 6.2
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-48:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 4.4
+        size_y: 9.7
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 48
+        pitch_x: 6.2
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-56:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 4.4
+        size_y: 11.3
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 56
+        pitch_x: 6.2
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-80:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 6.1
+        size_y: 17.0
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 80
+        pitch_x: 7.9
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
+TVSOP-100:
+    meta:
+        shortname: TVSOP
+        longname: Thin Very Small-Outline Package
+        keywords: TVSOP MO-194
+        datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
+    package:
+        size_x: 6.1
+        size_y: 20.8
+        tolerance_x: 0.1
+        tolerance_y: 0.1
+    pad:
+        n: 100
+        pitch_x: 7.9
+        pitch_y: 0.4
+        size_x: 1.8
+        size_y: 0.28
+        paste_x: 1.65
+        paste_y: 0.2
