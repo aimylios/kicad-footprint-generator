@@ -1,7 +1,7 @@
 TVSOP-14:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
+        longname: Thin Very Small-Outline Package (MO-194AA)
         keywords: TVSOP MO-194
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
@@ -20,7 +20,7 @@ TVSOP-14:
 TVSOP-16:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
+        longname: Thin Very Small-Outline Package (MO-194AB)
         keywords: TVSOP MO-194
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
@@ -39,7 +39,7 @@ TVSOP-16:
 TVSOP-20:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
+        longname: Thin Very Small-Outline Package (MO-194AC)
         keywords: TVSOP MO-194
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
@@ -58,8 +58,8 @@ TVSOP-20:
 TVSOP-24:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
-        keywords: TVSOP MO-194
+        longname: Thin Very Small-Outline Package (MO-194AD, MO-153CA)
+        keywords: TVSOP MO-194 MO-153
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
         size_x: 4.4
@@ -77,8 +77,8 @@ TVSOP-24:
 TVSOP-48:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
-        keywords: TVSOP MO-194
+        longname: Thin Very Small-Outline Package (MO-194AE, MO-153CD, SOT480-1)
+        keywords: TVSOP MO-194 MO-153
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
         size_x: 4.4
@@ -96,7 +96,7 @@ TVSOP-48:
 TVSOP-56:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
+        longname: Thin Very Small-Outline Package (MO-194AF, SOT481-2)
         keywords: TVSOP MO-194
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
@@ -115,8 +115,8 @@ TVSOP-56:
 TVSOP-80:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
-        keywords: TVSOP MO-194
+        longname: Thin Very Small-Outline Package (MO-194BA, MO-153FF)
+        keywords: TVSOP MO-194 MO-153
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:
         size_x: 6.1
@@ -134,7 +134,7 @@ TVSOP-80:
 TVSOP-100:
     meta:
         shortname: TVSOP
-        longname: Thin Very Small-Outline Package
+        longname: Thin Very Small-Outline Package (MO-194BB)
         keywords: TVSOP MO-194
         datasheet: http://www.ti.com/lit/an/scba009e/scba009e.pdf
     package:

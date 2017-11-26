@@ -32,9 +32,9 @@ klcFabTextThickness = 0.15  # fabrication layer text thickness
 klcFabLineWidth = 0.1       # fabrication layer line width
 klcFabBevelSize = 1.0       # maximum size of pin 1 marker on fabrication layer
 klcCrtydLineWidth = 0.05    # courtyard line width
-klcCrtydClearance = 0.25    # clearance between yourtyard and component or pad
+klcCrtydClearance = 0.25    # clearance between courtyard and component or pad
 
-# custom design parameters
+# custom design parameters for TVSOP
 fpLibrary = 'Package_SSOP'
 customTextOffset = 1.2      # distance between package and name or reference
 customSilkOffset = 0.05     # clearance between silk screen and package
@@ -42,7 +42,7 @@ customSilkOffset = 0.05     # clearance between silk screen and package
 def tvsop_gen(args):
     prefix = args['meta']['shortname']
     fpDesc = args['meta']['longname']
-    fpKeys = args['meta']['keywords']
+    fpTags = args['meta']['keywords']
     fpDS = args['meta']['datasheet']
     pkgDimX = args['package']['size_x']
     pkgDimY = args['package']['size_y']
@@ -59,11 +59,15 @@ def tvsop_gen(args):
     fpName = prefix + '-' + str(padN) + '_' \
              + str(pkgDimX) + 'x' + str(pkgDimY) + 'mm' + '_' \
              + 'P' + str(pitchY) + 'mm'
+    fpDescription = str(padN) + '-Lead ' + fpDesc \
+                    + ', Body ' + str(pkgDimX) + 'x' + str(pkgDimY) + 'x1.2mm' \
+                    + ' (see ' + fpDS + ')'
+    fpKeywords = fpTags + ' ' + str(pitchY) + 'mm'
 
     # initialise KiCad footprint
     fp = Footprint(fpName)
-    fp.setDescription(str(padN) + '-Lead ' + fpDesc + ' (see ' + fpDS + ')')
-    fp.setTags(fpKeys)
+    fp.setDescription(fpDescription)
+    fp.setTags(fpKeywords)
     fp.setAttribute('smd')
 
     # pads on left side
@@ -145,26 +149,14 @@ def tvsop_gen(args):
 
     # component outline on fabrication layer
     bvlDim = min(klcFabBevelSize, min(pkgDimX, pkgDimY)/4)
-    fp.append(Line(start=[-pkgDimX/2+bvlDim, -pkgDimY/2],
-                   end=[-pkgDimX/2, -pkgDimY/2+bvlDim],
-                   width=klcFabLineWidth,
-                   layer='F.Fab'))
-    fp.append(Line(start=[-pkgDimX/2, -pkgDimY/2+bvlDim],
-                   end=[-pkgDimX/2, pkgDimY/2],
-                   width=klcFabLineWidth,
-                   layer='F.Fab'))
-    fp.append(Line(start=[-pkgDimX/2, pkgDimY/2],
-                   end=[pkgDimX/2, pkgDimY/2],
-                   width=klcFabLineWidth,
-                   layer='F.Fab'))
-    fp.append(Line(start=[pkgDimX/2, pkgDimY/2],
-                   end=[pkgDimX/2, -pkgDimY/2],
-                   width=klcFabLineWidth,
-                   layer='F.Fab'))
-    fp.append(Line(start=[pkgDimX/2, -pkgDimY/2],
-                   end=[-pkgDimX/2+bvlDim, -pkgDimY/2],
-                   width=klcFabLineWidth,
-                   layer='F.Fab'))
+    fp.append(PolygoneLine(polygone=[[-pkgDimX/2+bvlDim, -pkgDimY/2],
+                                     [-pkgDimX/2, -pkgDimY/2+bvlDim],
+                                     [-pkgDimX/2, pkgDimY/2],
+                                     [pkgDimX/2, pkgDimY/2],
+                                     [pkgDimX/2, -pkgDimY/2],
+                                     [-pkgDimX/2+bvlDim, -pkgDimY/2]],
+                           width=klcFabLineWidth,
+                           layer='F.Fab'))
 
     # courtyard
     cydDimX = pitchX + padDimX + 2*klcCrtydClearance
